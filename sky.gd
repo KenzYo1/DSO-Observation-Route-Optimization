@@ -8,6 +8,7 @@ extends Node2D
 
 const graphGenNode = preload("res://graph_gen.tscn")
 var k_graph = null
+var hasPriority = false
 
 const CSV_FILE = "res://deep_space_objects//dso.csv"
 # Called when the node enters the scene tree for the first time.
@@ -43,7 +44,7 @@ func _process(delta):
 		shortestPath.visible = true
 		print(pathStr)
 		
-		k_graph.gen_random_paths(SharedValues.stackOfObject.TOP+1, true)
+		k_graph.gen_random_paths(SharedValues.stackOfObject.TOP+1, hasPriority)
 
 		
 func change_file_err_msg(msg: String) -> void:
@@ -76,6 +77,8 @@ func add_to_stack(csv_row) -> void:
 	newStackEl.right_ascension = ra_to_deg(csv_row[1])
 	newStackEl.declination = csv_deg_to_float_deg(csv_row[2])
 	newStackEl.priority = float(csv_row[3])
+	if newStackEl.priority > 0:
+		hasPriority = true
 	SharedValues.pushStack(SharedValues.stackOfObject, newStackEl)
 
 
