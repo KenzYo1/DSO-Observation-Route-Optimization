@@ -1,0 +1,15 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://cifjdk5ihy62p"
+valid=false
+
+[deps]
+
+source_file="res://deep_space_objects/dso.csv"
+
+[params]
+
+compress=true
+delimiter=0

@@ -1,0 +1,18 @@
+obj_name,right_ascension(hours:minutes:seconds),declination(degrees),priority[0(no priority)..1(high priority exclusive))
+θ Centauri,14:06:41.32,-36:22:07.3,0
+α Centauri,14:39:40.90,-60:50:06.5,0.3
+β Centauri,14:03:49.44,-60:22:22.7,0
+γ Centauri,12:41:31.20,-48:57:35.6,0
+ε Centauri,13:39:53.27,-53:27:58.9,0
+η Centauri,14:35:30.45,-42:09:27.9,0
+ζ Centauri,13:55:32.43,-47:17:17.8,0
+δ Centauri,12:08:21.54,-50:43:20.7,0
+ι Centauri,13:20:36.07,-36:42:43.5,0
+λ Centauri,11:35:46.93,-63:01:11.4,0	
+κ Centauri,14:59:09.70,-42:06:14.9,0
+ν Centauri,13:49:30.30,-41:41:15.6,0.4
+μ Centauri,13:49:37.01,-42:28:25.3,0	
+π Centauri,11:21:00.44,-54:29:27.7,0
+d Centauri,13:31:02.67,-39:24:26.2,0	
+ω Centauri,13:26:47.28,-47:28:46.1,0.8		
+σ Centauri,12:28:02.41,-50:13:50.2,0.7		

@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cp6pq82lpjptw"]
+
+[ext_resource type="Script" uid="uid://cv5bha73cb0w" path="res://sky.gd" id="1_gr5xt"]
+[ext_resource type="PackedScene" uid="uid://biy8x3earm5ib" path="res://input_ui.tscn" id="2_dptxg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yh5pb"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Sky" type="Node2D"]
+script = ExtResource("1_gr5xt")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_yh5pb")
+
+[node name="InputUi" parent="." instance=ExtResource("2_dptxg")]
+position = Vector2(760, 400)
